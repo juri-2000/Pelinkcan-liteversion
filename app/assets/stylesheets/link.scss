@@ -1,0 +1,59 @@
+// Place all the styles related to the lists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form{
+    margin:0 auto;
+}
+
+.link-main{
+    padding-left:300px;
+    padding-top:50px;
+}
+
+ul {
+   list-style: none;
+}
+
+.name{
+    text-align:center;
+}
+
+.hoge{
+    border-radius: 20px;
+    color:gray;
+}
+
+.arrow-icon-color-selector{
+    border-radius: 50%;
+}
+
+.link-main{
+    padding-left: 50px;
+}
+
+.box{
+    margin-top:60px;
+    margin-left:50px;
+    padding: 2.5% 0;
+    display: inline-block;
+    float:left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 8px;
+    width: 20% ;
+    border-color:pink;
+}
+
+.delete{
+   position: relative;
+   top: 40px;
+   left:100px;
+}

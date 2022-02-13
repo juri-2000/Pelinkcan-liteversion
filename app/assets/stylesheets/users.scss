@@ -1,0 +1,50 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  width: 200px;
+}
+
+main{
+  text-align:center;
+}
+
+.user{
+  color:gray;
+  padding:40px 0 0;
+  
+}
+
+.name{
+  font-size:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:grey;
+}
+
+.name:first-child{
+  padding-top:60px;
+}
+
+.name2{
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.return{
+  display:inline-block;
+  font-size:20px;
+}
+
+.line{
+  margin:0 auto;
+}

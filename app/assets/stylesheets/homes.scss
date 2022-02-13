@@ -1,0 +1,41 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .container-fluid{
+     height:100px;
+ }
+ 
+ .col-4{
+     padding-left:50px;
+ }
+ 
+ .header{
+     padding:30px;
+ }
+.title{
+     padding-top:50px;
+     text-align:center;
+}
+
+.title2{
+     display:inline-block;
+     padding-top:20px;
+     text-align:center;
+}
+
+.title3{
+     padding-top:50px;
+     padding-left:50px;
+     text-align:center;
+}
+
+.title4{
+     display:inline-block;
+     padding-top:20px;
+     text-align:center;
+}
+
+.pelinkcan{
+    margin:100px auto;
+}

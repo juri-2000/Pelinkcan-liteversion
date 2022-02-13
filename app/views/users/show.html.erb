@@ -1,0 +1,34 @@
+<!---後で部分テンプレートにする-->
+<header class="container-fluid bg-light w-100">
+   <div class="row">
+      <div class="header col-5">
+         <%= link_to link_path(current_user.id) do %>
+         <%= image_tag 'pelinkcan.png' %>
+         <% end %>
+      </div>
+      <div class="header col-1">
+      </div>
+   </div>
+</header>
+<!---ここまで-->
+<main>
+   
+   <div class="user_information">
+   <h2 class="user">ユーザー情報</h2>
+   <hr class="line" width="300px">
+      <ul>
+         <!---テーブルタグ使う--->
+         <li class="name">名前</li>
+         <hr class="line" width="300px">
+         <li class="name2"><%= current_user.name %></li>
+         <hr class="line" width="300px">
+         <li class="name">メールアドレスsu</li>
+         <hr class="line" width="300px">
+         <li class="name2"><%= current_user.email %></li>
+         <hr class="line" width="300px">
+      </ul>
+   </div>
+   
+   <span class="return"><%= link_to "戻る", link_path, style:"color:lightslategrey; text-align:center;" %></span>
+   
+</main>

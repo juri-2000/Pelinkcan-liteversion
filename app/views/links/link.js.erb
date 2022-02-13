@@ -1,0 +1,4 @@
+<!--id="comments_areaにをrenderで指定した部分テンプレートに更新-->
+$('colortag_<%= linktag.color %>').html("<%= j(render 'links/form', link: @link, linktag: @linktag) %>");
+<!--フォームを送信したあとにフォームの値を空にします-->
+$('colortag_<%= linktag.color %>').val('');

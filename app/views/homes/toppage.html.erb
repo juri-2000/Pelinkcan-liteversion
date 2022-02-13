@@ -1,0 +1,42 @@
+<header class="container-fluid bg-light w-100">
+  <div class="row">
+    <div class="header col-5">
+      <%= image_tag 'pelinkcan.png' %>
+    </div>
+    <div class="header col-7">
+      <span class="log-in"><%= link_to 'ログイン' ,new_user_session_path ,style:"color:black; font-size:20px;"%> </span>
+      <span style="font-size:20px;">|</span>
+      <span class="sign-up"><%= link_to '新規登録' ,new_user_registration_path ,style:"color:black; font-size:20px;" %></span>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="row">
+   <div class="col-6">
+       <%= image_tag 'pelinkcan.png',size: '300x100' ,class:"pelinkcan" %>
+   </div>
+   <div class="col-6">
+    <div class="title">
+     <span style="font-size:50px;">最も直感的なURL管理</br></span>
+     <span class="title2" style="font-size:20px;">Pelinkcanはあなたのお気に入りサイトへ</br>
+           直感的にアクセスできます</br>
+     <span class="title2" style="font-size:20px;">タグを付ける事で</br>
+          　探しているサイトへひとっ飛び</br>
+     </span>
+    </div>
+   </div>
+
+   <div class="col-6">
+    <div class="title3">
+     <span style="font-size:50px;">さあ飛び立とう！</br></span>
+     <span class="title4" style="font-size:20px;">会員登録が終われば、すぐに始められます！</br>
+           あなたのお気に入りサイトを沢山登録しましょう！</br>
+     <span class="title4" style="font-size:20px;">Let's enjoy Pelinkcan</br>
+          　And fly away!</br>
+     </span>
+    </div>
+   </div>
+     <div class="col-6">
+       <%= image_tag 'pelinkcan.png',size: '300x100' ,class:"pelinkcan" %>
+   </div>
+</main>
