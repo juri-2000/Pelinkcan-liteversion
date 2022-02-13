@@ -1,5 +1,18 @@
 <link rel="stylesheet" href="/assets/new_form.scss"/>
 <div class="form">
+  
+ 
+  <% if @link.errors.any? %>
+  <div class="error">
+  <%= @link.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @link.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+
 <%= form_with model:@link, local:true do |f| %>
 <ul>
   <li class="name"><%= f.label :name, 'タイトル' %></li>
@@ -9,6 +22,7 @@
   <li class="name"><%= f.label :name, 'メモ' %></li>
   <li><%= f.text_area :body, class: "hoge", size: "60x5" %></li>
 
+  
   <!--ここまで-->
   <li class="name"><%= f.submit "リンク作成" ,class:"btn btn-secondary"%></li>
 </ul>

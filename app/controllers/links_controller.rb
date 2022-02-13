@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
 
-    
+
     def new
       @link = Link.new
       @linktag = LinkTag.new
@@ -10,21 +10,23 @@ class LinksController < ApplicationController
     end
     
     def create
-      link = Link.new(link_params)
-      link.user_id = current_user.id
-      link.save
-      redirect_to link_path(link.id)
+      @link = Link.new(link_params)
+      @link.user_id = current_user.id
+      if @link.save
+      redirect_to links_path
+      else
+      render :new
+      end
     end
     
-    def show
+    def index
        @links = Link.all.where(user_id: current_user)
-       @link=Link.find(params[:id])
     end
     
     def destroy
        link=Link.find(params[:id])
        link.destroy
-       redirect_to link_path(current_user.id)
+       redirect_to links_path
     end 
     
   private
