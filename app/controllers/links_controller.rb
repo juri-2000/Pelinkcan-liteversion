@@ -19,6 +19,20 @@ class LinksController < ApplicationController
       end
     end
     
+    def edit
+       @link = Link.find(params[:id])
+    end
+    
+    def update
+      @link = Link.find(params[:id])
+      @link.user_id = current_user.id
+      if @link.update(link_params)
+      redirect_to links_path
+      else
+      render :edit
+      end
+    end
+    
     def index
        @links = Link.all.where(user_id: current_user)
     end
